@@ -14,13 +14,13 @@ Citizen.CreateThread(function()
 					print('Wilkommen Lavan')
 				else
 					if xPlayer.getMoney() >= Config.MoneyCount then
-						PerformHttpRequest('DISCORD_WEBHOOK', function(err, text, headers) end, 'POST', json.encode({username = 'MoneySystem', content = ':warning: ' .. GetPlayerName(xPlayer.source) .. ' hat ' .. xPlayer.getMoney() .. '$ (Money)', avatar_url = 'https://pbs.twimg.com/profile_images/847824193899167744/J1Teh4Di_400x400.jpg'}), { ['Content-Type'] = 'application/json' })
+						PerformHttpRequest('DISCORD_WEBHOOK', function(err, text, headers) end, 'POST', json.encode({username = 'MoneySystem', content = ':warning: ' .. GetPlayerName(xPlayer.source) .. ' hat ' .. xPlayer.getMoney() .. '$ (Money)', avatar_url = 'https://cdn.discordapp.com/attachments/1101537044938887268/1106643928842772582/lol3.png'}), { ['Content-Type'] = 'application/json' })
 					end
 					if xPlayer.getAccount('bank').money >= Config.MoneyCount then
-						PerformHttpRequest('DISCORD_WEBHOOK', function(err, text, headers) end, 'POST', json.encode({username = 'MoneySystem', content = ':warning: ' .. GetPlayerName(xPlayer.source) .. ' hat ' .. xPlayer.getAccount('bank').money .. '$ (Bank)', avatar_url = 'https://pbs.twimg.com/profile_images/847824193899167744/J1Teh4Di_400x400.jpg'}), { ['Content-Type'] = 'application/json' })
+						PerformHttpRequest('DISCORD_WEBHOOK', function(err, text, headers) end, 'POST', json.encode({username = 'MoneySystem', content = ':warning: ' .. GetPlayerName(xPlayer.source) .. ' hat ' .. xPlayer.getAccount('bank').money .. '$ (Bank)', avatar_url = 'https://cdn.discordapp.com/attachments/1101537044938887268/1106643928842772582/lol3.png'}), { ['Content-Type'] = 'application/json' })
 					end
 					if xPlayer.getAccount('black_money').money >= Config.MoneyCount then
-						PerformHttpRequest('DISCORD_WEBHOOK', function(err, text, headers) end, 'POST', json.encode({username = 'MoneySystem', content = ':warning: ' .. GetPlayerName(xPlayer.source) .. ' hat ' .. xPlayer.getAccount('black_money').money .. '$ (DirtyMoney)', avatar_url = 'https://pbs.twimg.com/profile_images/847824193899167744/J1Teh4Di_400x400.jpg'}), { ['Content-Type'] = 'application/json' })
+						PerformHttpRequest('DISCORD_WEBHOOK', function(err, text, headers) end, 'POST', json.encode({username = 'MoneySystem', content = ':warning: ' .. GetPlayerName(xPlayer.source) .. ' hat ' .. xPlayer.getAccount('black_money').money .. '$ (DirtyMoney)', avatar_url = 'https://cdn.discordapp.com/attachments/1101537044938887268/1106643928842772582/lol3.png'}), { ['Content-Type'] = 'application/json' })
 					end
 				end
 			end	
